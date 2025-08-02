@@ -2,19 +2,19 @@ import { useState } from "react";
 
 function GenInfo(){
     
-    const [oldname, newname] = useState("Tyler Durden");
+    const [oldname, newname] = useState("");
     const handleNameChange = (event) =>{
         newname(event.target.value);
         console.log(event.target.value);
     }
 
-    const [oldemail, newemail ] = useState("tylerdurden@gmail.com");
+    const [oldemail, newemail ] = useState("");
     const handleEmailChange = (event) =>{
         newemail(event.target.value);
         console.log(event.target.value);
     }
 
-    const [oldnumber,newnumber] = useState("9350930301");
+    const [oldnumber,newnumber] = useState("");
     const handlePhoneChange = (event) =>{
         newnumber(event.target.value);
         console.log(event.target.value);
